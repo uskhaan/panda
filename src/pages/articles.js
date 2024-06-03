@@ -6,6 +6,7 @@ import Layout from "@/components/Layout";
 import AnimatedText from "@/components/AnimatedText";
 import article1 from "../../public/images/articles/pagination component in reactjs.jpg";
 import { motion, useMotionValue } from "framer-motion";
+import TransitionEffect from "@/components/TransitionEffect";
 
 const FramerImage = motion(Image);
 
@@ -42,7 +43,7 @@ const MovingImg = ({ title, img, link }) => {
         src={img}
         alt={title}
         className="z-10 w-96 -auto
-hidden absolute rounded-lg"
+        hidden absolute rounded-lg md:!hidden"
       />
     </Link>
   );
@@ -73,7 +74,7 @@ rounded-br--3xl"
         />
       </Link>
       <Link href={link} target="_blank">
-        <h2 className="capitalize text-2xl font-bold my-4 hover:underline">
+        <h2 className="capitalize text-2xl font-bold my-4 hover:underline xs:text-lg">
           {title}
         </h2>
       </Link>
@@ -93,10 +94,14 @@ const Article = ({ img, title, date, link }) => {
       viewport={{ once: true }}
       className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center
 justify-between bg-light text-dark first:mt-0 border border-solid
-border-dark border-r-4 border-b-4 dark:border-light dark:bg-dark dark:text-light"
+border-dark border-r-4 border-b-4 dark:border-light dark:bg-dark dark:text-light
+sm:flex-col"
     >
       <MovingImg title={title} img={img} link={link} />
-      <span className="text-primary dark:text-primaryDark font-semibold pl-4">
+      <span
+        className="text-primary dark:text-primaryDark font-semibold pl-4 sm:self-start sm:pl-0
+            xs:text-sm"
+      >
         {date}
       </span>
     </motion.li>
@@ -110,13 +115,18 @@ const articles = () => {
         <title>USK | About Page</title>
         <meta name="description" content="any description"></meta>
       </Head>
+      <TransitionEffect />
       <main
         className="w-full mb-16 flex flex-col items-center justify-center
 overflow-hidden dark:text-light"
       >
         <Layout className="pt-16">
-          <AnimatedText text="Words Can Change The World!" className="mb-16" />
-          <ul className="grid grid-cols-2 gap-16">
+          <AnimatedText
+            text="Words Can Change The World!"
+            className="mb-16
+          lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
+          />
+          <ul className="grid grid-cols-2 gap-16 lg:gap-8 md:grid-cols-1 md:gap-y-16">
             <FeaturedArticle
               title="Build A Custom Pagination Component In Reactjs From Scratch"
               summary="Learn how to build a custom pagination component in ReactJS from scratch. Follow this step-by-step guide to integrate Pagination component in your ReactJS project."
