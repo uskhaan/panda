@@ -96,10 +96,10 @@ const NavBar = () => {
           <CustomLink href="/" title="Home" className="mr-4" />
           <CustomLink href="/about" title="About" className="mx-4" />
           <CustomLink href="/projects" title="Projects" className="mx-4" />
-          <CustomLink href="/articles" title="Articles" className="ml-4" />
+          {/* <CustomLink href="/articles" title="Articles" className="ml-4" /> */}
         </nav>
         <nav className="flex items-center justify-center flex-wrap">
-          <motion.a
+          {/* <motion.a
             href="/"
             target="_blank"
             whileHover={{ y: -2 }}
@@ -107,9 +107,9 @@ const NavBar = () => {
             className="w-6 mr-3"
           >
             <TwitterIcon />
-          </motion.a>
+          </motion.a> */}
           <motion.a
-            href="/"
+            href="https://github.com/uskhaan"
             target="_blank"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -118,7 +118,7 @@ const NavBar = () => {
             <GithubIcon />
           </motion.a>
           <motion.a
-            href="/"
+            href="https://www.linkedin.com/in/uskhaan/"
             target="_blank"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -166,12 +166,12 @@ const NavBar = () => {
               className=""
               toggle={handleClick}
             />
-            <CustomMobileLink
+            {/* <CustomMobileLink
               href="/articles"
               title="Articles"
               className=""
               toggle={handleClick}
-            />
+            /> */}
           </nav>
           <nav className="flex items-center justify-center flex-wrap mt-2">
             <motion.a
