@@ -11,10 +11,11 @@ import pms from "../../public/images/projects/pms.png";
 import promptoo from "../../public/images/projects/propmptoo.png";
 import chirp from "../../public/images/projects/chirp.png";
 import wesapp from "../../public/images/projects/wes-mobile.png";
+import fieldhub from "../../public/images/projects/field-hub.png";
 import hr from "../../public/images/projects/hr.png";
 import innovent from "../../public/images/projects/innovent.png";
 import wes from "../../public/images/projects/wes.png";
-import wateensol from "../../public/images/projects/wateensol.jpg";
+import devyro from "../../public/images/projects/devyro.png";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
@@ -199,26 +200,28 @@ const projects = () => {
             <div className="col-span-12">
               <FeaturedProject
                 img={cdm}
-                title="CDM Central"
+                title="Project Pulse"
                 summary="Increased efficiency and automated business processes for CDM Smith which is an American engineering and construction company. This ERP solution centralizes around tracking proposals and projects, resource monitoring, invoicing, featuring automated report generation."
                 type="Web"
               />
             </div>
             <div className="col-span-12">
               <FeaturedProject
-                img={wateensol}
-                title="Wateen Solutions"
+                img={devyro}
+                title="Devyro"
                 summary="A Single Page Application (SPA) developed to be used as a Software Company's Portfolio site serving as a digital showcase of the company's expertise, achievements, and offerings. The software company can present its capabilities and innovations to clients and partners."
                 type="Web"
               />
             </div>
             <div className="col-span-12">
               <FeaturedProject
-                img={innovent}
-                title="Genie"
-                summary="Leveraging the power of GPT-4 to cater to students of all grades and classes, offering comprehensive topic explanations, audio-based question inputs, and personalized test question generation."
-                linkTitle={"Visit App"}
-                link="https://play.google.com/store/apps/details?id=com.innoventsoft&pli=1"
+                img={hr}
+                title="Ease Hub"
+                summary="Revolutionize HR with Wateen EaseHub! Manage leave, plan travel, and access company policies - all from your smartphone for a more connected and efficient workplace."
+                linkTitle={"Visit Android App"}
+                secLinkTitle={"Visit iOS App"}
+                link="https://play.google.com/store/apps/details?id=com.wateen.easehub&hl=en&gl=US"
+                secLink="https://apps.apple.com/pk/app/wateen-easehub/id6499433529"
                 type="Mobile"
               />
             </div>
@@ -236,13 +239,21 @@ const projects = () => {
             </div>
             <div className="col-span-12">
               <FeaturedProject
-                img={hr}
-                title="Ease Hub"
-                summary="Revolutionize HR with Wateen EaseHub! Manage leave, plan travel, and access company policies - all from your smartphone for a more connected and efficient workplace."
+                img={fieldhub}
+                title="Field Hub"
+                summary="FieldHub application is designed to streamline the management of field force for organizations across various industries. With real-time GPS tracking and comprehensive territory management, the app empowers businesses to monitor their teams' performance and efficiency like never before."
                 linkTitle={"Visit Android App"}
-                secLinkTitle={"Visit iOS App"}
-                link="https://play.google.com/store/apps/details?id=com.wateen.easehub&hl=en&gl=US"
-                secLink="https://apps.apple.com/pk/app/wateen-easehub/id6499433529"
+                link="https://play.google.com/store/apps/details?id=com.wateen_tracking_app"
+                type="Mobile"
+              />
+            </div>
+            <div className="col-span-12">
+              <FeaturedProject
+                img={innovent}
+                title="Genie"
+                summary="Leveraging the power of GPT-4 to cater to students of all grades and classes, offering comprehensive topic explanations, audio-based question inputs, and personalized test question generation."
+                linkTitle={"Visit App"}
+                link="https://play.google.com/store/apps/details?id=com.innoventsoft&pli=1"
                 type="Mobile"
               />
             </div>
